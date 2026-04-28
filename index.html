@@ -21,7 +21,22 @@
         padding: 12px 25px;
         font-size: 16px;
         border-radius: 6px;
-        border: none;
+    }
+
+
+    .content-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;  
+        gap: 20px;          
+        padding: 20px;
+        flex-wrap: wrap;       
+    }
+
+    .map-text {
+        color: rgb(238, 231, 231); 
+        font-weight: bold; 
+        margin-top: 20px;
     }
 
 </style>
@@ -36,15 +51,13 @@
     </a>
 </div>
 
-<div class="map-container">
-    <div class="map-text" style="color: rgb(238, 231, 231); font-weight: bold; margin-top: 20px;">
-        Click where you want to start your tour
-    </div>
-        <img src="images.png" usemap="#image-map">
-    </div>
+<div class="map-text">
+    Click where you want to start your tour
+</div>
 
-
-    <img src="Map.png" usemap="#image-map">
+<div class="content-wrapper">
+    <img src="logo.png" alt="Seven Hills Logo">
+    <img src="Map.png" usemap="#image-map" alt="Campus Map">
 </div>
 
 <map name="image-map">
